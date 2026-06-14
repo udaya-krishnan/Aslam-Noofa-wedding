@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 
 const CountdownTimer = ({ visible }: { visible: boolean }) => {
-
   // Nikkah Date & Time
   // 28 June 2026 - 11:00 AM
   const targetDate = new Date("2026-06-28T11:00:00").getTime();
@@ -44,11 +43,8 @@ const CountdownTimer = ({ visible }: { visible: boolean }) => {
   return (
     <section className="relative z-10 px-6 py-16">
       <div className="max-w-md mx-auto text-center">
-
         {/* Heading */}
-        <h2
-          className="font-display text-4xl text-gold-gradient mb-3 animate-fade-up leading-[1.4] pt-3 pb-2"
-        >
+        <h2 className="font-display text-4xl text-gold-gradient mb-3 animate-fade-up leading-[1.4] pt-3 pb-2">
           Countdown to Our Nikkah
         </h2>
 
@@ -74,13 +70,12 @@ const CountdownTimer = ({ visible }: { visible: boolean }) => {
                 {String(u.value).padStart(2, "0")}
               </span>
 
-              <span className="font-serif text-xs tracking-[0.2em] uppercase text-muted-foreground mt-1 block">
+              <span className="font-serif text-[9px] sm:text-xs tracking-[0.08em] sm:tracking-[0.2em] uppercase text-muted-foreground mt-1 block">
                 {u.label}
               </span>
             </div>
           ))}
         </div>
-
       </div>
     </section>
   );
