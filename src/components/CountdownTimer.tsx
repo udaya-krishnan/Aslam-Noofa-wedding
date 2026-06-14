@@ -3,8 +3,8 @@ import { useState, useEffect } from "react";
 const CountdownTimer = ({ visible }: { visible: boolean }) => {
 
   // Nikkah Date & Time
-  // 06 June 2026 - 11:00 AM
-  const targetDate = new Date("2026-06-06T11:00:00").getTime();
+  // 28 June 2026 - 11:00 AM
+  const targetDate = new Date("2026-06-28T11:00:00").getTime();
 
   const [time, setTime] = useState({
     days: 0,
@@ -47,17 +47,17 @@ const CountdownTimer = ({ visible }: { visible: boolean }) => {
 
         {/* Heading */}
         <h2
-         className="font-display text-4xl text-gold-gradient mb-3 animate-fade-up leading-[1.4] pt-3 pb-2"
+          className="font-display text-4xl text-gold-gradient mb-3 animate-fade-up leading-[1.4] pt-3 pb-2"
         >
-          Countdown to Nikkah
+          Countdown to Our Nikkah
         </h2>
 
-        {/* Date */}
+        {/* Wedding Date */}
         {/* <p
-          className="font-serif text-ivory/70 tracking-[0.2em] uppercase text-sm mb-8 animate-fade-up"
+          className="font-serif text-ivory/70 tracking-[0.15em] uppercase text-sm mb-8 animate-fade-up"
           style={{ animationDelay: "2.3s", opacity: 0 }}
         >
-          06 June 2026 • 11:00 AM
+          28 June 2026 • 11:00 AM
         </p> */}
 
         {/* Timer */}
@@ -80,6 +80,7 @@ const CountdownTimer = ({ visible }: { visible: boolean }) => {
             </div>
           ))}
         </div>
+
       </div>
     </section>
   );

@@ -23,7 +23,7 @@ const Index = () => {
         <CountdownTimer visible={opened} />
         <ScratchCard visible={opened} />
         <EventLocation visible={opened} />
-        <PhotoGallery visible={opened} />
+        {/* <PhotoGallery visible={opened} /> */}
 
         {opened && (
       
@@ -81,7 +81,7 @@ const Index = () => {
           className="font-heading text-gold-light text-base sm:text-lg tracking-[0.15em] animate-fade-up"
           style={{ animationDelay: "1.2s" }}
         >
-          #AshikAndSafreen
+          #AslamAndNoofa
         </p>
 
         {/* Final message */}

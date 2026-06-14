@@ -3,9 +3,9 @@ import { MapPin, Navigation } from "lucide-react";
 const EventLocation = ({ visible }: { visible: boolean }) => {
   if (!visible) return null;
 
-  const venueName = "Fathima Gani Mahal";
+  const venueName = "Parappan Square";
 
-  const address = "Podnur Road, Coimbatore, Tamil Nadu";
+  const address = "Venniyur, Kerala";
 
   const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
     venueName + " " + address
@@ -19,13 +19,13 @@ const EventLocation = ({ visible }: { visible: boolean }) => {
       >
         {/* Heading */}
         <h2 className="font-display text-4xl text-gold-gradient mb-8 leading-[1.3] py-2">
-          Venue
+          Wedding Venue
         </h2>
 
-        {/* Card */}
+        {/* Venue Card */}
         <div className="glass-card p-8 gold-glow rounded-3xl">
 
-          {/* Icon */}
+          {/* Location Icon */}
           <div className="flex justify-center mb-4">
             <div className="w-14 h-14 rounded-full bg-primary/10 border border-primary/30 flex items-center justify-center">
               <MapPin className="w-6 h-6 text-primary" />
@@ -42,7 +42,7 @@ const EventLocation = ({ visible }: { visible: boolean }) => {
             {address}
           </p>
 
-          {/* Maps Button */}
+          {/* Google Maps Button */}
           <a
             href={mapsUrl}
             target="_blank"
@@ -50,7 +50,7 @@ const EventLocation = ({ visible }: { visible: boolean }) => {
             className="inline-flex items-center gap-2 px-6 py-3 bg-primary/10 border border-primary/30 rounded-full font-serif text-sm text-primary tracking-wide hover:bg-primary/20 transition-colors duration-300"
           >
             <Navigation className="w-4 h-4" />
-            Open in Google Maps
+            Navigate to Venue
           </a>
         </div>
       </div>

@@ -13,7 +13,9 @@ const HeroSection = ({ visible = true }: HeroSectionProps) => {
     const onScroll = () => {
       if (window.scrollY > 40) setHintVisible(false);
     };
+
     window.addEventListener("scroll", onScroll, { passive: true });
+
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
@@ -35,7 +37,7 @@ const HeroSection = ({ visible = true }: HeroSectionProps) => {
           بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ
         </p>
 
-        {/* Groom Name — uses font-display class from your CSS */}
+        {/* Groom */}
         <h1
           className="font-display text-gold-gradient animate-soft-glow animate-fade-up"
           style={{
@@ -45,18 +47,29 @@ const HeroSection = ({ visible = true }: HeroSectionProps) => {
             animationDelay: "0.6s",
           }}
         >
-          Ashik
+          Aslam
         </h1>
+
+        <p
+          className="font-serif text-ivory/70 text-sm sm:text-base leading-relaxed animate-fade-up"
+          style={{ animationDelay: "0.75s" }}
+        >
+          Beloved son of
+          <br />
+          Mohamed Ashraf & Shemeena
+        </p>
+
 
         {/* Ampersand */}
         <p
-          className="font-heading text-bougainvillea-light text-3xl my-4 italic animate-fade-up"
+          className="font-heading text-bougainvillea-light text-3xl my-6 italic animate-fade-up"
           style={{ animationDelay: "0.9s" }}
         >
-          &amp;
+          &
         </p>
 
-        {/* Bride Name — uses font-display class from your CSS */}
+
+        {/* Bride */}
         <h1
           className="font-display text-gold-gradient animate-soft-glow animate-fade-up"
           style={{
@@ -66,13 +79,23 @@ const HeroSection = ({ visible = true }: HeroSectionProps) => {
             animationDelay: "1.2s",
           }}
         >
-          Safreen
+          Noofa
         </h1>
+
+        <p
+          className="font-serif text-ivory/70 text-sm sm:text-base leading-relaxed animate-fade-up"
+          style={{ animationDelay: "1.35s" }}
+        >
+          Beloved daughter of
+          <br />
+          Muhammed Ali & Shareefa
+        </p>
+
 
         {/* Floral Divider */}
         <div
           className="my-8 flex justify-center animate-fade-up"
-          style={{ animationDelay: "1.5s" }}
+          style={{ animationDelay: "1.6s" }}
         >
           <img
             src={dividerImg}
@@ -81,10 +104,8 @@ const HeroSection = ({ visible = true }: HeroSectionProps) => {
           />
         </div>
 
-        {/* Scroll Hint
-            Note: We do NOT mix animate-fade-up with inline opacity here.
-            Instead we use a wrapper that fades out when scrolled,
-            and a separate inner div that does the fade-in animation. */}
+
+        {/* Scroll Hint */}
         <div
           aria-hidden="true"
           className="flex flex-col items-center gap-2 mb-10"
@@ -93,7 +114,6 @@ const HeroSection = ({ visible = true }: HeroSectionProps) => {
             transition: "opacity 0.8s ease",
             pointerEvents: "none",
             animation: "fade-up 1s ease-out 1.8s forwards",
-            // Start hidden until animation fires
             animationFillMode: "both",
           }}
         >
@@ -133,6 +153,7 @@ const HeroSection = ({ visible = true }: HeroSectionProps) => {
           />
         </div>
 
+
         {/* Invitation Text */}
         <p
           className="font-serif text-ivory/80 text-lg sm:text-xl leading-relaxed tracking-wide animate-fade-up"
@@ -140,20 +161,39 @@ const HeroSection = ({ visible = true }: HeroSectionProps) => {
         >
           Together with their families
           <br />
-          invite you to celebrate their Nikkah
+          request the honour of your presence
+          <br />
+          to celebrate their sacred Nikkah
         </p>
 
       </div>
 
+
       <style>{`
         @keyframes scrollDot {
-          0%   { transform: translateY(0px);  opacity: 1;   }
-          60%  { transform: translateY(12px); opacity: 0.2; }
-          100% { transform: translateY(0px);  opacity: 1;   }
+          0% { 
+            transform: translateY(0px);
+            opacity: 1;
+          }
+          60% {
+            transform: translateY(12px);
+            opacity: 0.2;
+          }
+          100% {
+            transform: translateY(0px);
+            opacity: 1;
+          }
         }
+
         @keyframes chevronBounce {
-          0%, 100% { transform: translateY(0px); opacity: 0.5; }
-          50%      { transform: translateY(4px); opacity: 1;   }
+          0%, 100% {
+            transform: translateY(0px);
+            opacity: 0.5;
+          }
+          50% {
+            transform: translateY(4px);
+            opacity: 1;
+          }
         }
       `}</style>
 
