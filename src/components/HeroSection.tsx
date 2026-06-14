@@ -163,7 +163,7 @@ const HeroSection = ({ visible = true }: HeroSectionProps) => {
           <br />
           request the honour of your presence
           <br />
-          to celebrate their sacred Nikkah
+          to celebrate their sacred Wedding
         </p>
 
       </div>

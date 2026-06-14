@@ -45,7 +45,7 @@ const CountdownTimer = ({ visible }: { visible: boolean }) => {
       <div className="max-w-md mx-auto text-center">
         {/* Heading */}
         <h2 className="font-display text-4xl text-gold-gradient mb-3 animate-fade-up leading-[1.4] pt-3 pb-2">
-          Countdown to Our Nikkah
+          Countdown to Our Wedding
         </h2>
 
         {/* Wedding Date */}

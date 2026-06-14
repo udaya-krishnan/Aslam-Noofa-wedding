@@ -3,12 +3,12 @@ import scratchSurface from "@/assets/scratch-surface.jpg";
 import { CalendarPlus } from "lucide-react";
 
 const EVENT_DETAILS = {
-  title: "Aslam & Noofa Nikkah",
+  title: "Aslam & Noofa Wedding",
   date: "20260628",        // YYYYMMDD
   startTime: "110000",     // HHMMSS
   endTime: "140000",       // HHMMSS — adjust end time as needed
   location: "Parappan Square, Venniyur",
-  description: "You are cordially invited to the Nikkah ceremony of Aslam & Noofa",
+  description: "You are cordially invited to the Wedding ceremony of Aslam & Noofa",
 }
 
 const addToGoogleCalendar = () => {
@@ -56,7 +56,7 @@ const ScratchCard = ({ visible }: { visible: boolean }) => {
       ctx.font = "600 15px 'Playfair Display', serif";
       ctx.textAlign = "center";
       ctx.fillText(
-        "Scratch to reveal our Nikkah details",
+        "Scratch to reveal our Wedding details",
         canvas.offsetWidth / 2,
         canvas.offsetHeight / 2
       );
